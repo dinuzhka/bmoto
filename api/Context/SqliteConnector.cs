@@ -103,5 +103,19 @@ namespace bmoto.Context
             }
 
         }
+
+        internal void FlushData()
+        {
+            var query = "DELETE FROM AuditReports";
+            using (var con = new SqliteConnection(conStr))
+            {
+                con.Open();
+
+                var command = con.CreateCommand();
+                command.CommandText = query;
+                command.ExecuteNonQuery();
+            }
+
+        }
     }
 }

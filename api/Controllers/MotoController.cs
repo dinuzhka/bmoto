@@ -60,6 +60,16 @@ namespace bmoto.Controllers
             DataTable dt = JsonConvert.DeserializeObject<DataTable>(array.ToString());
             return DataTableToJSONWithJavaScriptSerializer(dt);
         }
+
+
+        [HttpGet]
+        [Route("flush")]
+        public void Flush()
+        {
+            var connection = SqliteConnector.Instance(_configuration);
+            connection.FlushData();
+        }
+
         private string DataTableToJSONWithJavaScriptSerializer(DataTable table)
         {
             List<Dictionary<string, object>> parentRow = new List<Dictionary<string, object>>();

@@ -146,7 +146,7 @@ import "@koumoul/vjsf/lib/VJsf.css";
 import "@koumoul/vjsf/lib/deps/third-party.js";
 import _ from "lodash";
 const axios = require("axios");
-const service_url = 'http://localhost:53480/moto'
+const service_url = 'https://bmoto20210804183547x.azurewebsites.net/moto'
 export default {
   name: "App",
   components: { VJsf },
