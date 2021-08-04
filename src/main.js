@@ -3,8 +3,10 @@ import App from './App.vue'
 import vuetify from './plugins/vuetify'
 import 'roboto-fontface/css/roboto/roboto-fontface.css'
 import '@mdi/font/css/materialdesignicons.css'
+import JsonExcel from "vue-json-excel"
 
 Vue.config.productionTip = false
+Vue.component("downloadExcel", JsonExcel)
 
 new Vue({
   vuetify,
