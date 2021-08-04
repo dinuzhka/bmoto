@@ -21,3 +21,16 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
